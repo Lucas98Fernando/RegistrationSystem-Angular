@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Azul",
+      "price": 2
+    },
+    {
+      "id": 2,
+      "name": "Notebook ACER i5 8GB 500GB",
+      "price": 3500
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S9",
+      "price": 3000
+    }
+  ]
+}
