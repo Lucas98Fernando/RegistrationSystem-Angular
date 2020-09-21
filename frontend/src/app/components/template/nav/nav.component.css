@@ -5,6 +5,10 @@
 .sidenav a {
     color: #fff;
 }
+.sidenav a:hover {
+    color: #FF1515;
+    background-color: #fff;
+}
 .sidenav i {
     padding-right: 10px;
 }
