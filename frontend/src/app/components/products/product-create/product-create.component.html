@@ -5,10 +5,12 @@
       <mat-form-field>
          <!-- O maxImput é uma diretiva de atributo | O ngModel serve para criação de um TwoWayDataBinding, que é utilizado para sincronizar o que estiver no input com o que está no back-end e vice-versa.... -->
          <input type="text" matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+         <mat-icon matSuffix>mode_edit</mat-icon>
       </mat-form-field>
       <mat-form-field>
          <!-- O maxImput é uma diretiva de atributo -->
          <input type="number" matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
+         <mat-icon matSuffix>monetization_on</mat-icon>
       </mat-form-field>
    </form>
    <button class="btn-create save" mat-raised-button (click)="createProduct()" color="primary">
