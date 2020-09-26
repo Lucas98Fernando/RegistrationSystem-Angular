@@ -14,6 +14,16 @@
       "id": 3,
       "name": "Samsung Galaxy S9",
       "price": 3000
+    },
+    {
+      "name": "Deu certo mano, tá aprendendo hein",
+      "price": 5.34,
+      "id": 4
+    },
+    {
+      "name": "Xbox Series X",
+      "price": 4.999,
+      "id": 5
     }
   ]
 }

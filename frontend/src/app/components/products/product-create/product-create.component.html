@@ -1,7 +1,20 @@
-<button class="btn-create" mat-raised-button (click)="createProduct()" color="primary">
-    Salvar
- </button>
-
- <button class="btn-create" mat-raised-button (click)="cancel()" color="warn">
-    Cancelar
- </button>
+<!-- Formulário para criação de produtos  -->
+<mat-card>
+   <mat-card-title class="title">Novo produto</mat-card-title>
+   <form>
+      <mat-form-field>
+         <!-- O maxImput é uma diretiva de atributo | O ngModel serve para criação de um TwoWayDataBinding, que é utilizado para sincronizar o que estiver no input com o que está no back-end e vice-versa.... -->
+         <input type="text" matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+      </mat-form-field>
+      <mat-form-field>
+         <!-- O maxImput é uma diretiva de atributo -->
+         <input type="number" matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
+      </mat-form-field>
+   </form>
+   <button class="btn-create save" mat-raised-button (click)="createProduct()" color="primary">
+      Salvar
+   </button>
+   <button class="btn-create cancel" mat-raised-button (click)="cancel()" color="warn">
+      Cancelar
+   </button>
+</mat-card>

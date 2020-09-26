@@ -26,6 +26,11 @@ import { ProductCreateComponent } from './components/products/product-create/pro
 // Importando o módulo do Angular para realização de requisições HTTP
 import { HttpClientModule } from '@angular/common/http';
 
+// Importando o módulo para formulários
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from'@angular/material/input';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +53,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
