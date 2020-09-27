@@ -1,8 +1,9 @@
+import { Product } from './../procuct.model';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
-import { ProductReadTableDataSource, ProductReadTableItem } from './product-read-table-datasource';
+import { ProductReadTableDataSource } from './product-read-table-datasource';
 
 @Component({
   selector: 'app-product-read-table',
@@ -12,11 +13,11 @@ import { ProductReadTableDataSource, ProductReadTableItem } from './product-read
 export class ProductReadTableComponent implements AfterViewInit, OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatTable) table: MatTable<ProductReadTableItem>;
+  @ViewChild(MatTable) table: MatTable<Product>;
   dataSource: ProductReadTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['id', 'name', 'price'];
 
   ngOnInit() {
     this.dataSource = new ProductReadTableDataSource();
