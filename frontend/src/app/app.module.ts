@@ -32,6 +32,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from'@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { ProductsReadComponent } from './components/products/products-read/products-read.component';
+import { ProductReadTableComponent } from './components/products/product-read-table/product-read-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,8 @@ import { ProductsReadComponent } from './components/products/products-read/produ
     RedDirective,
     ForDirective,
     ProductCreateComponent,
-    ProductsReadComponent
+    ProductsReadComponent,
+    ProductReadTableComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +65,10 @@ import { ProductsReadComponent } from './components/products/products-read/produ
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
