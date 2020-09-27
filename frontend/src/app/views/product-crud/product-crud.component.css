@@ -1,4 +1,10 @@
-.btn-create:hover {
+.btn-create {
     background-color: #FF1515;
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+}
+
+.btn-create:hover {
+    background-color: #FF3535;
     color: #fff;
 }
