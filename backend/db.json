@@ -29,6 +29,16 @@
       "name": "PS5",
       "price": 4999.99,
       "id": 6
+    },
+    {
+      "name": "Cadeira giratória",
+      "price": 320,
+      "id": 7
+    },
+    {
+      "name": "Xbox",
+      "price": 3,
+      "id": 8
     }
   ]
 }

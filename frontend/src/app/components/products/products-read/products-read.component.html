@@ -1,1 +1,6 @@
-<p>products-read works!</p>
+<ul>
+    <!-- Utilização de uma diretiva estrutural, com o ngFor, ele vai gerar a quantidade de itens que estiver no back-end -->
+    <li *ngFor="let product of products">
+        {{product.name}}
+    </li>
+</ul>
