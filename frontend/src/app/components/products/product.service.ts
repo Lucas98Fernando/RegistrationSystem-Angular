@@ -34,4 +34,18 @@ export class ProductService {
   read(): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseUrl)
   }
+
+  // Método para editar um produto criado, passando como parâmetro um id
+  readById(id: string): Observable<Product> {
+    // Obtendo a url e o id atribuído ao produto selecionado, através da interpolação, ex: http://localhost:3001/product/1
+    const url = `${this.baseUrl} / ${id}`
+    return this.http.get<Product>(url)
+  }
+
+  // Método para atualizar os dados de um determinado produto
+  update(product: Product): Observable<Product> {
+    const url = `${this.baseUrl} / ${product.id}`
+    // Realizando a atualização dos dados do produto
+    return this.http.put<Product>(url, product)
+  }
 }
