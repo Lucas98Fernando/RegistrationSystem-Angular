@@ -2,8 +2,8 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta BIC Azul",
-      "price": 2
+      "name": "Caneta BIC Azul ultra",
+      "price": 5
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
     },
     {
       "name": "Xbox Series X",
-      "price": 4.999,
+      "price": 4999,
       "id": 5
     },
     {
@@ -36,9 +36,14 @@
       "id": 7
     },
     {
-      "name": "Xbox",
-      "price": 3,
+      "name": "Xbox fat",
+      "price": 1000,
       "id": 8
+    },
+    {
+      "name": "Mouse",
+      "price": 15,
+      "id": 9
     }
   ]
 }

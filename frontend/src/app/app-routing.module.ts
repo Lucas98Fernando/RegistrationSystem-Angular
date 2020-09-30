@@ -6,6 +6,8 @@ import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 // Importando o componente de criação de produtos
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+// Importando o componente de atualização de produtos
+import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
 
 // Definição das rotas de navegação
 const routes: Routes = [
@@ -20,7 +22,12 @@ const routes: Routes = [
   {
     path: "products/create",
     component: ProductCreateComponent
-  }
+  },
+  {
+    // Passando o id como parâmetro na url
+    path: "products/update/:id",
+    component: ProductUpdateComponent
+  },
 ];
 
 @NgModule({

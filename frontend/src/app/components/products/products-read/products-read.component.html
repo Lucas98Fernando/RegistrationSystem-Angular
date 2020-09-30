@@ -23,11 +23,11 @@
         <ng-container matColumnDef="action">
             <th mat-header-cell *matHeaderCellDef>Ações</th>
             <td mat-cell *matCellDef="let row">
-                <!-- Adicionando as rotas para edição do produto -->
-                <a routerLink="">
+                <!-- Adicionando a rota para edição do produto, tendo como parâmetro na rota o id do produto -->
+                <a routerLink="/products/update/{{ row.id }}">
                     <i class="material-icons icon-edit">edit</i>
                 </a>
-                <!-- Adicionando as rotas para remoção do produto -->
+                <!-- Adicionando a rota para remoção do produto -->
                 <a routerLink="">
                     <i class="material-icons icon-delete">delete</i>
                 </a>
