@@ -1,22 +1,22 @@
-<!-- Formulário para criação de produtos  -->
 <mat-card>
-    <mat-card-title class="title">Editar produto</mat-card-title>
+    <mat-card-title class="title">Deseja excluir o produto ?</mat-card-title>
     <form>
        <mat-form-field>
           <!-- O maxImput é uma diretiva de atributo | O ngModel serve para criação de um TwoWayDataBinding, que é utilizado para sincronizar o que estiver no input com o que está no back-end e vice-versa.... -->
-          <input type="text" matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+          <input type="text" matInput placeholder="Nome" [value]="product.name" name="name" disabled>
           <mat-icon matSuffix>mode_edit</mat-icon>
        </mat-form-field>
        <mat-form-field>
           <!-- O maxImput é uma diretiva de atributo -->
-          <input type="number" matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
+          <input type="number" matInput placeholder="Preço (R$)" [value]="product.price" name="price" disabled>
           <mat-icon matSuffix>monetization_on</mat-icon>
        </mat-form-field>
     </form>
-    <button class="btn-create save" mat-raised-button (click)="updateProduct()" color="primary">
-       Atualizar
+    <button class="btn-create save" mat-raised-button (click)="deleteProduct()" color="warn">
+       Excluir
     </button>
-    <button class="btn-create cancel" mat-raised-button (click)="cancel()" color="warn">
+    <button class="btn-create cancel" mat-raised-button (click)="cancel()" color="primary">
        Cancelar
     </button>
  </mat-card>
+

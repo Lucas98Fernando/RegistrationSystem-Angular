@@ -16,11 +16,6 @@
       "price": 3000
     },
     {
-      "name": "Deu certo mano, tá aprendendo hein",
-      "price": 5.34,
-      "id": 4
-    },
-    {
       "name": "Xbox Series X",
       "price": 4999,
       "id": 5
@@ -36,13 +31,13 @@
       "id": 7
     },
     {
-      "name": "Xbox fat",
+      "name": "Xbox One Fat",
       "price": 1000,
       "id": 8
     },
     {
-      "name": "Mouse",
-      "price": 15,
+      "name": "Xbox Series S",
+      "price": 2999.99,
       "id": 9
     }
   ]
